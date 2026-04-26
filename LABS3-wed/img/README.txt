@@ -1,0 +1,1 @@
+Carpeta img creada. Las imágenes del sitio siguen usando enlaces web como solicitaste.

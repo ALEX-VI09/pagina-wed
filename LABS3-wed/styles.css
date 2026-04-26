@@ -1,0 +1,62 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f2f2f2}
+
+/* HEADER */
+header{background:#0d2c54;color:#fff;padding:15px 30px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:22px}
+.logo span{color:#ff2e2e}
+nav a{color:#fff;margin:0 12px;text-decoration:none;font-size:14px}
+nav a:hover{color:#ff2e2e}
+
+/* LAYOUT */
+.container{display:grid;grid-template-columns:2fr 1fr;gap:20px;padding:20px}
+
+/* MAIN */
+.main{position:relative}
+.main img{width:100%;border-radius:6px}
+.overlay{position:absolute;bottom:0;left:0;width:100%;padding:25px;background:linear-gradient(transparent,rgba(0,0,0,0.9));color:#fff;border-radius:6px}
+.overlay h2{font-size:26px;margin:10px 0}
+.tag{background:#ff2e2e;padding:4px 10px;font-size:12px;display:inline-block}
+.btn{margin-top:10px;display:inline-block;padding:8px 15px;border:1px solid #fff;color:#fff;text-decoration:none;font-size:12px}
+
+/* SIDEBAR */
+.side .box{position:relative;margin-bottom:15px}
+.side img{width:100%;border-radius:6px}
+.side .text{position:absolute;bottom:10px;left:15px;color:#fff;font-weight:600}
+.side .arrow{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:#ff2e2e;color:#fff;padding:8px}
+
+/* POPULAR */
+.section{display:grid;grid-template-columns:2fr 1fr;gap:20px;padding:20px}
+.cards{display:flex;gap:20px}
+.card{background:#fff;border-radius:6px;overflow:hidden}
+.card img{width:100%}
+.card .content{padding:15px}
+.card .content h3{font-size:16px;margin:10px 0}
+.card .content p{font-size:13px;color:#666}
+
+/* SOCIAL */
+.social div{padding:12px;color:#fff;margin-bottom:10px;font-size:14px}
+.fb{background:#3b5998}
+.tw{background:#1da1f2}
+.in{background:#0077b5}
+.ig{background:#e1306c}
+.yt{background:#ff0000}
+.vm{background:#00adef}
+
+/* NEWSLETTER */
+.newsletter{background:#fff;padding:15px;border-radius:6px;margin-top:20px}
+.newsletter input{width:100%;padding:10px;margin-top:10px;border:1px solid #ccc}
+.newsletter button{margin-top:10px;width:100%;padding:10px;background:#ff2e2e;color:#fff;border:none}
+
+/* FOOTER */
+footer{background:#0d2c54;color:#fff;padding:30px;margin-top:20px}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+footer h4{margin-bottom:10px}
+footer p, footer a{font-size:13px;color:#ccc;text-decoration:none;display:block;margin-bottom:5px}
+.copy{text-align:center;margin-top:20px;border-top:1px solid #444;padding-top:10px;color:#aaa}
+
+@media(max-width:900px){
+.container,.section{grid-template-columns:1fr}
+.cards{flex-direction:column}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
